@@ -1,0 +1,37 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "main_collection_filter_aFrEAW": {
+      "type": "main-collection-filter",
+      "settings": {
+        "heading": "Ersatzteile",
+        "subheading": "Hier finden Sie alle Ersatzteile zu Ihrem Rollator.",
+        "collection_list": [
+          "ersatzteile-rollatoren-serie-h1010",
+          "ersatzteile-rollatoren-serie-h1020",
+          "ersatzteile-rollatoren-serie-h1030",
+          "ersatzteile-rollatoren-serie-h1040",
+          "ersatzteile-rollatoren-serie-h1050",
+          "ersatzteile-rollatoren-serie-h1060",
+          "ersatzteile-rollatoren-serie-h1140",
+          "ersatzteile-rollatoren-serie-h1150",
+          "ersatzteile-rollatoren-serie-h1160"
+        ],
+        "products_per_page": 24,
+        "mobile_products_per_row": "2",
+        "desktop_products_per_row": 4
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_collection_filter_aFrEAW"
+  ]
+}
