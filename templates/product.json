@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "mfield_points_zfNA9a": {
+          "type": "mfield_points",
+          "settings": {
+            "metafield_identifier": "custom.product_benefits",
+            "icon_type": "checkmark"
+          }
+        },
         "reviews_io_reviewsio_rating_output_TdqMfR": {
           "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {}
@@ -24,14 +31,6 @@
             "color_mode": "swatch",
             "variant_image_options": "",
             "size_chart_page": ""
-          }
-        },
-        "mfield_points_zfNA9a": {
-          "type": "mfield_points",
-          "settings": {
-            "metafield_identifier": "custom.product_benefits",
-            "icon_type": "checkmark",
-            "custom_icon_image": "shopify://shop_images/checkmark.svg"
           }
         },
         "quantity_selector": {
@@ -63,9 +62,9 @@
         }
       },
       "block_order": [
+        "mfield_points_zfNA9a",
         "reviews_io_reviewsio_rating_output_TdqMfR",
         "variant_picker",
-        "mfield_points_zfNA9a",
         "quantity_selector",
         "buy_buttons",
         "social_proof_cmzYTY"
