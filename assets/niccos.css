@@ -1,3 +1,31 @@
+/* Benefits list metafield */
+.niccos-mfield-points__container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.niccos-mfield-points__container.checkmark .niccos-mfield-points__field:before {
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background: url({{ images['checkmark.svg'] | image_url: width: 24 }});
+  border: 0;
+  content: '';
+  display: block;
+  height: 24px;
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+}
+
+.niccos-mfield-points__container .niccos-mfield-points__field {
+  padding-left: 44px;
+  position: relative;
+}
+/* End Benefits list metafield */
+
 .button {
   border-radius:15px; !important;
 }
