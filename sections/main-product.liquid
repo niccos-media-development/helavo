@@ -4,7 +4,7 @@
   #shopify-section-{{ section.id }} { 
       {% if mfield_block != blank %}
         {% if mfield_block.settings.custom_icon_image %}
-          --mfield-point-image:  url({{ mfield_block.settings.icon_image | image_url: width: 24 }});
+          --mfield-point-image:  url({{ mfield_block.settings.custom_icon_image | image_url: width: 24 }});
 
         {% else %}
                           {% case mfield_block.settings.icon_image %}
