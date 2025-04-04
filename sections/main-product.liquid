@@ -3,14 +3,15 @@
 {%- assign mfield_block = section.blocks | where: 'type', 'mfield_points' | first %}
   #shopify-section-{{ section.id }} { 
       {% if mfield_block != blank %}
-        {% unless mfield_block.settings.custom_image %}
-          {% case mfield_block.settings.icon_image %}
+        {% if mfield_block.settings.custom_image != blank %}
+          --mfield-point-image:  url({{ mfield_block.settings.icon_image | image_url: width: 24 }});
+
+        {% else %}
+                          {% case mfield_block.settings.icon_image %}
             {% when 'checkmark' %}
               --mfield-point-image:  url({{ images['checkmark.svg'] | image_url: width: 24 }});
           {% endcase %}
-        {% else %}
-                --mfield-point-image:  url({{ mfield_block.settings.icon_image | image_url: width: 24 }});
-                {% endunless %}
+                {% endif %}
       {% endif %}
 
       
