@@ -7,10 +7,10 @@
         {% unless mfield_block.settings.custom_image %}
           {% case mfield_block.icon_image %}
             {% when 'checkmark' %}
-              --mfield-image:  url({{ images['checkmark.svg'] | image_url: width: 24 }});
+              --mfield-point-image:  url({{ images['checkmark.svg'] | image_url: width: 24 }});
           {% endcase %}
         {% else %}
-                --mfield-image:  url({{ mfield_block.icon_image | image_url: width: 24 }});
+                --mfield-point-image:  url({{ mfield_block.icon_image | image_url: width: 24 }});
                 {% endunless %}
       {% endif %}
 
