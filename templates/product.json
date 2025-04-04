@@ -29,7 +29,9 @@
         "mfield_points_zfNA9a": {
           "type": "mfield_points",
           "settings": {
-            "metafield_identifier": "custom.product_benefits"
+            "metafield_identifier": "custom.product_benefits",
+            "icon_type": "checkmark",
+            "custom_icon_image": "shopify://shop_images/checkmark.svg"
           }
         },
         "quantity_selector": {
