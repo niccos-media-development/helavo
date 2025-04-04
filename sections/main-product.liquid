@@ -7,7 +7,7 @@
           --mfield-point-image:  url({{ mfield_block.settings.custom_icon_image | image_url: width: 24 }});
 
         {% else %}
-                          {% case mfield_block.settings.icon_image %}
+                          {% case mfield_block.settings.icon_type %}
             {% when 'checkmark' %}
               --mfield-point-image:  url({{ images['checkmark.svg'] | image_url: width: 24 }});
           {% endcase %}
