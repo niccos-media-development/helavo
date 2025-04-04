@@ -100,6 +100,29 @@ quite differently, as it is in a drawer on tablet/desktop, and a popover on mobi
     {
       "type": "@app"
     },
+        {
+      "type": "mfield_points",
+      "name": "Metafield-based points",
+                "settings": [
+        {
+          "type": "text",
+          "id": "metafield_identifier",
+          "label": "Metafield Identifier",
+          "info": "Which metafield contains the list of points?"
+        },
+                          {
+          "type": "select",
+          "id": "selector_mode",
+          "label": "Selector type",
+          "options": [
+            {
+              "value": "checkmark",
+              "label": "Checkmark"
+            }
+          ]
+                          }
+                ]
+    },
     {
       "type": "variant_picker",
       "name": "Variant picker",
