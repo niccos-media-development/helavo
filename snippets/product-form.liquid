@@ -39,7 +39,7 @@
         assign metafield = product.metafields[metafield_namespace][metafield_key]
 
       %}
-      {%- if metafield.type == "list.single_line_text" and metafield.value.size > 0 %}
+      {%- if metafield.value.size > 0 %}
         <ul class="niccos-mfield-points__container {{ block.settings.icon_type }}">
           {% for value in metafield.value %}
             <li class="niccos-mfield-points__field">{{ value }}</li>
