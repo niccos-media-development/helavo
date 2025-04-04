@@ -5,6 +5,21 @@
 <div class="product-form">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
+      {% when 'mfield_points' %}
+      {% liquid
+                  assign metafield_parts = block.settings.metafield_identifier | split: '.'
+                 assign metafield_namespace = metafield_parts | first 
+                  assign metafield_key = metafield_parts | last 
+        assign metafield = product.metafields[metafield_namespace][metafield_key]
+
+      %}
+      {%- if metafield.type == "list.single_line_text" and metafield.value.size > 0 %}
+        <ul class="niccos-mfield-points__container {{ block.settings.icon_type }}">
+          {% for value in metafield.value %}
+            <li class="niccos-mfield-points__field">{{ value }}</li>
+          {% endfor %}
+        </ul>
+      {%- endif -%}
 
       {% when 'social-proof' %}
         <div class="wrapper">
