@@ -2,6 +2,32 @@
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 
+<style>
+  .niccos-mfield-points__container {
+    
+  }
+
+  .niccos-mfield-points__container.checkmark .niccos-mfield-points__field:before {
+        transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    background: url({{ images['checkmark.svg'] | image_url: width: 24 }});
+    border: 0;
+    content: '';
+    display: block;
+    height: 24px;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+  }
+
+  .niccos-mfield-points__container .niccos-mfield-points__field {
+    padding-left: 44px;
+  }
+  </style>
+
 <div class="product-form">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
