@@ -3,7 +3,7 @@
 {%- assign mfield_block = section.blocks | where: 'type', 'mfield_points' | first %}
   #shopify-section-{{ section.id }} { 
       {% if mfield_block != blank %}
-        {% if mfield_block.settings.custom_icon_image != blank %}
+        {% if mfield_block.settings.custom_icon_image %}
           --mfield-point-image:  url({{ mfield_block.settings.icon_image | image_url: width: 24 }});
 
         {% else %}
