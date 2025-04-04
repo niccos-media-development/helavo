@@ -36,6 +36,7 @@
     "currency_code_enabled": false,
     "stagger_products_apparition": false,
     "round_color_swatches": false,
+    "color_swatch_config": "silber:#c0c0c0\nschwarz:#000000\nweiß:#ffffff\nrot:#ff0000\nblau:#0000ff\ngrau:#808080\ngelb:#ffff00\ngrün:#008000\nrosa:#ffc0cb\nlila:#800080",
     "show_vendor": false,
     "show_secondary_image": false,
     "product_add_to_cart": false,
