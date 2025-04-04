@@ -1,5 +1,20 @@
 <style>
+  {%- assign mfield_block = section.blocks | find: 'type', 'mfield_points' %}
+
+
   #shopify-section-{{ section.id }} {
+      {% if mfield_block %}
+        {% unless mfield_block.settings.custom_image %}
+          {% case mfield_block.icon_image %}
+            {% when 'checkmark' %}
+              --mfield-image:  url({{ images['checkmark.svg'] | image_url: width: 24 }});
+          {% endcase %}
+        {% else %}
+                --mfield-image:  url({{ mfield_block.icon_image | image_url: width: 24 }});
+                {% endunless %}
+      {% endif %}
+
+      
     {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
 
     {%- if buy_buttons_block.settings.show_payment_button -%}
@@ -120,7 +135,13 @@ quite differently, as it is in a drawer on tablet/desktop, and a popover on mobi
               "label": "Checkmark"
             }
           ]
-        }
+        },
+        {
+  "type": "image_picker",
+  "id": "custom_icon_image",
+  "label": "Custom Icon Image",
+          "info": "If set, will use the image as icon instead"
+}
       ]
     },
     {
