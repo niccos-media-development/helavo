@@ -1,3 +1,7 @@
+.mega-menu__image-push {
+  width: 150px !important;
+}
+
 /* Benefits list metafield */
 .niccos-mfield-points__container {
   list-style-type: none;
