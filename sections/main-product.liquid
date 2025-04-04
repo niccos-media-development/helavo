@@ -1,5 +1,5 @@
 <style>
-  {%- assign mfield_block = section.blocks | find: 'type', 'mfield_points' %}
+  {%- assign mfield_block = section.blocks | where: 'type', 'mfield_points' | first %}
 
 
   #shopify-section-{{ section.id }} {
