@@ -1,9 +1,14 @@
-<style>
   {%- assign mfield_block = section.blocks | where: 'type', 'mfield_points' | first %}
+<script>
+  console.log(`{{mfield_block.type}}`);
+  debugger;
+</script>
+<style>
 
 
-  #shopify-section-{{ section.id }} {
-      {% if mfield_block %}
+
+  #shopify-section-{{ section.id }} { 
+      {% if mfield_block != blank %}
         {% unless mfield_block.settings.custom_image %}
           {% case mfield_block.icon_image %}
             {% when 'checkmark' %}
