@@ -11,6 +11,9 @@
     min-width: unset;
     max-width: unset;
   }
+  .mobile-nav__image-push img {
+    display: none;
+  }
 }
 
 /* Benefits list metafield */
