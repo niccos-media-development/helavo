@@ -14,14 +14,14 @@
   content: '';
   display: block;
   height: 24px;
-  left: 10px;
+  left: 0px;
   position: absolute;
   top: 50%;
   width: 24px;
 }
 
 .niccos-mfield-points__container .niccos-mfield-points__field {
-  padding-left: 44px;
+  padding-left: 34px;
   position: relative;
 }
 /* End Benefits list metafield */
