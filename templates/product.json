@@ -16,7 +16,8 @@
           "type": "mfield_points",
           "settings": {
             "metafield_identifier": "custom.product_benefits",
-            "icon_type": "checkmark"
+            "icon_type": "checkmark",
+            "custom_icon_image": "shopify://shop_images/Kein_Titel_1440_x_1400_px_1400_x_1400_px_256_x_256_px_1.svg"
           }
         },
         "reviews_io_reviewsio_rating_output_TdqMfR": {
