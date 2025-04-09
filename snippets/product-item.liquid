@@ -8,7 +8,7 @@
   {%- assign product_url_contains_query = false -%}
 {%- endif -%}
 {% assign collection_handle = collection.title |  default: "" %}
-<product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %} {% if filter_collection %}product-hidden{% endif %}" {% if reveal %}reveal{% endif %} data-collection="{{ collection_handle }}">
+<product-item class="niccos product-item {% unless product.available %}product-item--sold-out{% endunless %} {% if filter_collection %}product-hidden{% endif %}" {% if reveal %}reveal{% endif %} data-collection="{{ collection_handle }}">
   {%- capture product_labels -%}
     {%- if product.metafields.custom.badges != blank -%}
       {%- for custom_badge in product.metafields.custom.badges.value -%}
