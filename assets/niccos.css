@@ -16,6 +16,13 @@
   }
 }
 
+@media screen and (min-width: 770px) {
+  product-media[product-handle] {
+    position: sticky;
+    top: calc(var(--header-height) + 40px);
+  }
+}
+
 /* Benefits list metafield */
 .niccos-mfield-points__container {
   list-style-type: none;
