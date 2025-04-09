@@ -28,6 +28,8 @@
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   background: var(--mfield-point-image);
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 0;
   content: '';
   display: block;
