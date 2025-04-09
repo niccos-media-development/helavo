@@ -76,16 +76,6 @@
 
     {%- if request.page_type != 'password' and settings.product_add_to_cart and product.available and reduced_content != true and show_cta != true -%}
       {%- if product.variants.size == 1 -%}
-        {%- capture form_id -%}product_form_{{ section.id }}_{{ block.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
-        {%- form 'product', product, is: 'product-form', id: form_id, class: 'product-item__quick-form' -%}
-          <input type="hidden" name="quantity" value="1">
-          <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
-          <button is="loader-button" type="submit" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch">{{ 'collection.product.add_to_cart_short' | t }}</button>
-          <button type="submit" class="product-item__quick-buy-button hidden-no-touch">
-            <span class="visually-hidden">{{ 'collection.product.add_to_cart_short' | t }}</span>
-            {%- render 'icon' with quick_buy_icon_name -%}
-          </button>
-        {%- endform -%}
       {%- else -%}
         {%- comment -%}
         IMPLEMENTATION NOTE: Depending on the device we show a different icon or open a different mode (either popover or drawer)
@@ -271,6 +261,19 @@
       {%- endif -%}
     </div>
   </div>
+
+  {%- if request.page_type != 'password' and settings.product_add_to_cart and product.available and reduced_content != true and show_cta != true -%}
+    {%- capture form_id -%}product_form_{{ section.id }}_{{ block.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
+    {%- form 'product', product, is: 'product-form', id: form_id, class: 'product-item__quick-form' -%}
+      <input type="hidden" name="quantity" value="1">
+      <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+      <button is="loader-button" type="submit" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch">{{ 'collection.product.add_to_cart_short' | t }}</button>
+      <button type="submit" class="product-item__quick-buy-button hidden-no-touch">
+        <span class="visually-hidden">{{ 'collection.product.add_to_cart_short' | t }}</span>
+        {%- render 'icon' with quick_buy_icon_name -%}
+      </button>
+    {%- endform -%}
+  {%- endif -%}
   
   {%- if product.available and reduced_content or show_cta -%}
     <div class="product-item__cta-wrapper">
