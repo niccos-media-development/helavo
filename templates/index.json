@@ -324,8 +324,8 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "background": "#ecfffa",
-        "text_color": "rgba(0,0,0,0)",
+        "background": "#4ab9ba",
+        "text_color": "#ffffff",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
