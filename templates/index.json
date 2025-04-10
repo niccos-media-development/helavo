@@ -15,7 +15,7 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IMG_2768_smaller.jpg",
+            "image": "shopify://shop_images/a74374ebbd724065840895c3d78af39f_raw.jpg",
             "text_position": "middle_center",
             "subheading": "Bleiben Sie aktiv und unabhängig – mit hochwertigen Gehhilfen für jeden Tag",
             "title": "Mobilität neu erleben",
@@ -27,7 +27,7 @@
             "button_background": "#ffffff",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
-            "overlay_opacity": 40
+            "overlay_opacity": 45
           }
         }
       },
