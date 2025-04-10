@@ -5,21 +5,45 @@
 <div class="product-form">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {% when 'mfield_points' %}
-      {% liquid
-                  assign metafield_parts = block.settings.metafield_identifier | split: '.'
-                 assign metafield_namespace = metafield_parts | first 
-                  assign metafield_key = metafield_parts | last 
-        assign metafield = product.metafields[metafield_namespace][metafield_key]
+      {% when 'product_benefit' %}
+        {%- liquid
+          if rendered_product_benefits == true
+            continue
+          endif
 
-      %}
-      {%- if metafield.value.size > 0 %}
-        <ul class="niccos-mfield-points__container {{ block.settings.icon_type }}">
-          {% for value in metafield.value %}
-            <li class="niccos-mfield-points__field">{{ value }}</li>
-          {% endfor %}
-        </ul>
-      {%- endif -%}
+          assign rendered_product_benefits = true
+
+          assign benefit_blocks = section.blocks | where: 'type', 'product_benefit'
+        -%}
+
+        <div class="product-benefits-list">
+          {%- for block in benefit_blocks -%}
+            <div 
+             style="background-color: {{ block.settings.background }};"
+             class="product-benefit">
+              {%- if block.settings.icon_image != blank -%}
+                <div class="product-benefit__icon">{{ block.settings.icon_image | image_url: width: 40 | image_tag }}</div>
+              {%- endif -%}
+              <div><span>{{ block.settings.content }}</span></div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+      {% when 'mfield_points' %}
+        {% liquid
+          assign metafield_parts = block.settings.metafield_identifier | split: '.'
+          assign metafield_namespace = metafield_parts | first 
+          assign metafield_key = metafield_parts | last 
+          assign metafield = product.metafields[metafield_namespace][metafield_key]
+        %}
+
+        {%- if metafield.value.size > 0 %}
+          <ul class="niccos-mfield-points__container {{ block.settings.icon_type }}">
+            {% for value in metafield.value %}
+              <li class="niccos-mfield-points__field">{{ value }}</li>
+            {% endfor %}
+          </ul>
+        {%- endif -%}
 
       {% when 'social-proof' %}
         <div class="wrapper">
@@ -900,14 +924,14 @@
                       }
                       .buy-buttons-icons {
                         display:flex !important;
-                        justify-content:space-between;
+                        justify-content:center;
                         margin-top:10px;
                       }
                     </style>
                   {%- endunless -%}
                 {%- endif -%}
                 <div
-                  style="display:flex !important; justify-content:space-between; margin-top:10px;"
+                  style="display:flex !important; justify-content:center; margin-top:10px; flex-wrap: wrap;"
                   class="buy-buttons-icons payment-methods-list payment-methods-list--auto"
                 >
                   {% for type in shop.enabled_payment_types %}

@@ -116,6 +116,28 @@ quite differently, as it is in a drawer on tablet/desktop, and a popover on mobi
       "type": "@app"
     },
     {
+      "type": "product_benefit",
+      "name": "Product Benefit",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon Image"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background Color",
+          "default": "rgba(0,0,0,1)"
+        }
+      ]
+    },
+    {
       "type": "mfield_points",
       "name": "Metafield-based points",
       "settings": [
@@ -137,11 +159,11 @@ quite differently, as it is in a drawer on tablet/desktop, and a popover on mobi
           ]
         },
         {
-  "type": "image_picker",
-  "id": "custom_icon_image",
-  "label": "Custom Icon Image",
+          "type": "image_picker",
+          "id": "custom_icon_image",
+          "label": "Custom Icon Image",
           "info": "If set, will use the image as icon instead"
-}
+        }
       ]
     },
     {
