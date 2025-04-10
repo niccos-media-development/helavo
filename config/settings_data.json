@@ -42,7 +42,7 @@
     "show_secondary_image": false,
     "product_add_to_cart": true,
     "show_product_rating": false,
-    "product_color_display": "count",
+    "product_color_display": "hide",
     "product_image_size": "square",
     "cart_type": "drawer",
     "cart_icon": "shopping_cart",
