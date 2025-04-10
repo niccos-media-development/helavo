@@ -121,7 +121,7 @@
             "badge_text_color": "#000000",
             "enable_rich_snippets": true,
             "show_location": true,
-            "show_tab_selector": false,
+            "show_tab_selector": true,
             "show_dates": true,
             "show_avatar": true,
             "enable_sentiment_analysis": false,
