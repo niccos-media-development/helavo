@@ -162,4 +162,30 @@
   margin-bottom:10px;
 }
 
+.store-benefits {
+  margin-top: 34px;
+}
+
+.store-benefits .store-benefit-item {
+  padding: 15px 10px;
+  background: white;
+  justify-content: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 8px;
+}
+
+.store-benefits .store-benefit-item .store-benefit-icon {
+  height: 30px;
+}
+
+.store-benefits .store-benefit-item .store-benefit-texte {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+@media (max-width: 999px) {
+  .store-benefits .store-benefit-item .store-benefit-texte {
+    font-size: 12px !important;
+  }
+}
 
