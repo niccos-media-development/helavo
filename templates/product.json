@@ -48,18 +48,6 @@
             "buy_now_button_background": "rgba(0,0,0,0)",
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
-        },
-        "social_proof_cmzYTY": {
-          "type": "social-proof",
-          "settings": {
-            "social-headline": "Zufriedene Kunden",
-            "social-subheadline": "Erhalte Support zu deinem Rollator und wir beraten dich sehr gerne",
-            "social-image_1": "shopify://shop_images/Bildschirmfoto_2023-01-13_um_11.20.49.png",
-            "social-image_2": "shopify://shop_images/H1140_Listing_Image_3_DE.jpg",
-            "social-image_3": "shopify://shop_images/Bildschirmfoto_2023-01-13_um_11.17.47.png",
-            "social-button_link": "shopify://products/der-premium-rollator-fur-outdoor",
-            "social-button_text": "Chat öffnen"
-          }
         }
       },
       "block_order": [
@@ -67,8 +55,7 @@
         "reviews_io_reviewsio_rating_output_TdqMfR",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "social_proof_cmzYTY"
+        "buy_buttons"
       ],
       "settings": {
         "show_vendor": false,
@@ -316,21 +303,21 @@
         "text_color": "#000000",
         "icon_color": "#000000",
         "list_text_color": "#000000",
-        "button_color": "#FFFFFF",
+        "button_color": "#ffffff",
         "button_hover_color": "#dad0ff",
-        "button_bg_color": "#16142B",
-        "button_bg_hover_color": "#16142B",
-        "button_border_color": "#16142B",
-        "button_border_hover_color": "#16142B",
-        "table_border_color": "#2D2B43",
-        "table_active_border_color": "#DAD0FF",
-        "table_heading_color": "#1A192E",
-        "table_heading_active_color": "#FFFFFF",
+        "button_bg_color": "#16142b",
+        "button_bg_hover_color": "#16142b",
+        "button_border_color": "#16142b",
+        "button_border_hover_color": "#16142b",
+        "table_border_color": "#2d2b43",
+        "table_active_border_color": "#dad0ff",
+        "table_heading_color": "#1a192e",
+        "table_heading_active_color": "#ffffff",
         "table_heading_bg_active_color": "#3e3e3e",
         "table_column_active_bg_color": "#3e3e3e",
-        "table_row_heading_color": "#1A192E",
-        "table_row_text_color": "#1A192E",
-        "table_row_active_text_color": "#FFFFFF",
+        "table_row_heading_color": "#1a192e",
+        "table_row_text_color": "#1a192e",
+        "table_row_active_text_color": "#ffffff",
         "background_color": "#ffffff",
         "background_gradient": "",
         "border_color": "#000000",
