@@ -6,34 +6,34 @@
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {% when 'product_benefit' %}
-        {%- liquid
-          if rendered_product_benefits == true
-            continue
-          endif
-
-          assign rendered_product_benefits = true
-
-          assign benefit_blocks = section.blocks | where: 'type', 'product_benefit'
-        -%}
-
-        <div class="product-benefits-list">
-          {%- for block in benefit_blocks -%}
-            <div 
-             style="background-color: {{ block.settings.background }};"
-             class="product-benefit">
-              {%- if block.settings.icon_image != blank -%}
-                <div class="product-benefit__icon">{{ block.settings.icon_image | image_url: width: 40 | image_tag }}</div>
-              {%- endif -%}
-              <div><span>{{ block.settings.content }}</span></div>
+        <div class="store-benefits">
+          <div class="store-benefit-item first-store-benefit">
+            <div class="store-benefit-icon icon_size">
+              {% if block.settings.svg_icon_one %}
+                <img src="{{ block.settings.svg_icon_one | image_url }}" alt="Benefit Icon One" width="40" height="40">
+              {% endif %}
             </div>
-          {%- endfor -%}
+            <div class="store-benefit-texte block_font_size">
+              {{ block.settings.benefit_text_one }}
+            </div>
+          </div>
+          <div class="store-benefit-item second-store-benefit">
+            <div class="store-benefit-icon icon_size">
+              {% if block.settings.svg_icon_two %}
+                <img src="{{ block.settings.svg_icon_two | image_url }}" alt="Benefit Icon Two" width="40" height="40">
+              {% endif %}
+            </div>
+            <div class="store-benefit-texte block_font_size">
+              {{ block.settings.benefit_text_two }}
+            </div>
+          </div>
         </div>
 
       {% when 'mfield_points' %}
         {% liquid
           assign metafield_parts = block.settings.metafield_identifier | split: '.'
-          assign metafield_namespace = metafield_parts | first 
-          assign metafield_key = metafield_parts | last 
+          assign metafield_namespace = metafield_parts | first
+          assign metafield_key = metafield_parts | last
           assign metafield = product.metafields[metafield_namespace][metafield_key]
         %}
 
