@@ -311,24 +311,6 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
-    },
-    "rich_text_9VWdeD": {
-      "type": "rich-text",
-      "settings": {
-        "subheading": "",
-        "title": "Du benötigst Support?",
-        "content": "<p>Wir sind jederzeit für dich per Telefon, Chat oder E-Mail da! Klicke auf den unteren Button und wähle deinen Support aus.</p>",
-        "button_text": "Kontakt",
-        "button_link": "shopify://pages/uber-uns",
-        "background_type": "full_width",
-        "text_width": "medium",
-        "text_position": "center",
-        "text_alignment": "center",
-        "background": "#4ab9ba",
-        "text_color": "#ffffff",
-        "button_background": "rgba(0,0,0,0)",
-        "button_text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -338,7 +320,6 @@
     "image_with_text_ePHjxK",
     "image_with_text_yKAkAQ",
     "image_with_text_KCGBQe",
-    "17427980752a6ecb9a",
-    "rich_text_9VWdeD"
+    "17427980752a6ecb9a"
   ]
 }

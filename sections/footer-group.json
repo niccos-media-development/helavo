@@ -14,17 +14,17 @@
     "rich_text_qtU7ac": {
       "type": "rich-text",
       "settings": {
-        "subheading": "Subheading",
-        "title": "Talk about your brand",
-        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-        "button_text": "",
-        "button_link": "",
+        "subheading": "",
+        "title": "Du benötigst Support?",
+        "content": "<p>Wir sind jederzeit für dich per Telefon, Chat oder E-Mail da! Klicke auf den unteren Button und wähle deinen Support aus.</p>",
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/kontakt",
         "background_type": "full_width",
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)",
+        "background": "#4ab9ba",
+        "text_color": "#ffffff",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
