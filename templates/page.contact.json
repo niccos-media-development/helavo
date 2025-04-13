@@ -18,28 +18,6 @@
     },
     "contact-form": {
       "type": "contact-form",
-      "blocks": {
-        "text_6gL9EE": {
-          "type": "text",
-          "settings": {
-            "title": "Bestellnummer",
-            "use_long_text": false,
-            "is_required": true
-          }
-        },
-        "text_9UYHRL": {
-          "type": "text",
-          "settings": {
-            "title": "LOT Nummer",
-            "use_long_text": false,
-            "is_required": false
-          }
-        }
-      },
-      "block_order": [
-        "text_6gL9EE",
-        "text_9UYHRL"
-      ],
       "settings": {
         "title": "",
         "content": "",
