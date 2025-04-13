@@ -189,3 +189,49 @@
   }
 }
 
+.store-benefits {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.store-benefits .store-benefit-item {
+    align-items: center;
+    background: #f9f9fb;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 48%
+}
+
+.store-benefits .store-benefit-item .store-benefit-icon img, .store-benefits .store-benefit-item .store-benefit-icon svg {
+    height: auto;
+    width: 30px
+}
+
+.store-benefits .store-benefit-item .store-benefit-texte {
+    color: #505151;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    margin-left: 10px;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.pdp-sotre-benefits .first-store-benefit .store-benefit-texte {
+    max-width: 80px !important
+}
+
+.pdp-sotre-benefits .second-store-benefit .store-benefit-texte {
+    max-width: 118px !important
+}
+
+.cart-drawer-sotre-benefits {
+    margin-bottom: 10px;
+    padding: 0 15px 15px
+}
+
