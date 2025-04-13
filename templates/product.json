@@ -48,6 +48,15 @@
             "buy_now_button_background": "rgba(0,0,0,0)",
             "buy_now_button_text_color": "rgba(0,0,0,0)"
           }
+        },
+        "product_benefit_366Wir": {
+          "type": "product_benefit",
+          "settings": {
+            "svg_icon_one": "shopify://shop_images/Kein_Titel_1440_x_1400_px_1400_x_1400_px_256_x_256_px_1.svg",
+            "benefit_text_one": "+150.000 Kunden",
+            "svg_icon_two": "shopify://shop_images/Kein_Titel_1440_x_1400_px_1400_x_1400_px_256_x_256_px_1.svg",
+            "benefit_text_two": "Deutsche Qualität"
+          }
         }
       },
       "block_order": [
@@ -55,7 +64,8 @@
         "reviews_io_reviewsio_rating_output_TdqMfR",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "product_benefit_366Wir"
       ],
       "settings": {
         "show_vendor": false,
