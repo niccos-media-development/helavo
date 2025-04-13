@@ -171,7 +171,7 @@
         "table_row_tt6GdD": {
           "type": "table_row",
           "settings": {
-            "row_heading": "Simple Ingredients",
+            "row_heading": "Simple Ingred",
             "first_column": "",
             "first_column_icon": "check",
             "second_column": "",
@@ -233,7 +233,7 @@
         "heading_font": "rubik_n7",
         "heading_size": 52,
         "heading_size_mobile": 32,
-        "heading_height": 100,
+        "heading_height": 150,
         "text": "<p>We pride ourselves in our quality and focus on sleep, we cannot say the same for others.</p>",
         "text_custom": false,
         "text_font": "josefin_sans_n4",
