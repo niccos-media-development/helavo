@@ -11,6 +11,24 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "rich_text_qtU7ac": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "Subheading",
+        "title": "Talk about your brand",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -107,6 +125,7 @@
     }
   },
   "order": [
+    "rich_text_qtU7ac",
     "text-with-icons",
     "footer"
   ]
