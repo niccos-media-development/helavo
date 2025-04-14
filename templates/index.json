@@ -36,7 +36,7 @@
         "slide-1"
       ],
       "settings": {
-        "section_height": "medium",
+        "section_height": "small",
         "transition_type": "sweep",
         "show_initial_transition": false,
         "autoplay": true,
