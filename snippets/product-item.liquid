@@ -251,15 +251,6 @@
   {%- endif -%}
   
   {%- if product.available and reduced_content or show_cta -%}
-    
-  <script>
-    /*
-    {{ product.available }}
-    {{ product.variants.size }}
-    {{ product.title }}
-    */
-    debugger;
-  </script>
     <div class="product-item__cta-wrapper">
       {%- if product.variants.size == 1 -%}
         {%- capture form_id -%}product_form_{{ section.id }}_{{ block.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
