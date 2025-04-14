@@ -237,15 +237,6 @@
     </div>
   </div>
 
-  <script>
-    /*
-    {{ product.available }}
-    {{ product.variants.size }}
-    {{ product.title }}
-    */
-    debugger;
-  </script>
-
   {%- if request.page_type != 'password' and settings.product_add_to_cart and product.available and reduced_content != true and show_cta != true -%}
     {%- capture form_id -%}product_form_{{ section.id }}_{{ block.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
     {%- form 'product', product, is: 'product-form', id: form_id, class: 'product-item__quick-form' -%}
@@ -262,6 +253,15 @@
   {%- if product.available and reduced_content or show_cta -%}
     <div class="product-item__cta-wrapper">
       {%- if product.variants.size == 1 -%}
+        
+  <script>
+    /*
+    {{ product.available }}
+    {{ product.variants.size }}
+    {{ product.title }}
+    */
+    debugger;
+  </script>
         {%- capture form_id -%}product_form_{{ section.id }}_{{ block.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
         {%- form 'product', product, is: 'product-form', id: form_id -%}
           <input type="hidden" name="quantity" value="1">
