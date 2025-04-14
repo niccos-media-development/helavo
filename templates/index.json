@@ -184,13 +184,13 @@
         "item_NzLY4M": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/imgonline-com-ua-resize-JJqq0DocV2TO.jpg",
+            "image": "shopify://shop_images/uber_uns_Helavo.jpg",
             "tab_label": "Item",
             "subheading": "Über uns",
             "title": "Willkommen bei Helavo",
             "content": "<p>“Your helping hand” - Wir bei Helavo sind die helfende Hand unserer Kunden. Wir sind Produzent und Verkäufer qualitativ hochwertiger Produkte im Bereich Gehhilfen und Rollatoren. Unser Hauptaugenmerk liegt auf der Agilität und Mobilität unserer Kunden, die ihnen durch den Einsatz unsere Produkte im Alltag wieder vollumfänglich geschenkt werden sollen.</p>",
             "button_text": "Über uns",
-            "button_link": "#"
+            "button_link": "shopify://pages/uber-uns"
           }
         }
       },
@@ -216,13 +216,13 @@
         "item_HYXh6b": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/imgonline-com-ua-resize-5mhmAxCDPWvKsa.jpg",
+            "image": "shopify://shop_images/Helavo_Outdoor_Rollator_H1040.jpg",
             "tab_label": "Item",
             "subheading": "Der Bestseller auf Amazon",
-            "title": "Helavo H1010 Allround Rollator",
-            "content": "<p>Der Rollator H1010 ist das Produkt der Wahl für all diejenigen, die im Alltag eingeschränkt sind aber sowohl im Innen- als auch im Außenbereich Ihre Mobilität nicht missen möchten oder können. Optisch inzwischen von vielen nachgeahmt, bleibt er in Puncto Verarbeitung, Funktionalität und Robustheit unangefochtener Testsieger. Die Kleinigkeiten machen den Unterschied.</p>",
+            "title": "Helavo H1040 Outdoor Rollator",
+            "content": "<p>Der Helavo Rollator H1040 ist die ideale Wahl für alle, die auch im Außenbereich nicht auf ihre Mobilität verzichten möchten. Mit seiner robusten Aluminiumkonstruktion und den luftgefüllten Reifen bietet er höchsten Komfort und Stabilität auf unebenem Gelände. Die ergonomischen Griffe sind höhenverstellbar und ermöglichen eine individuelle Anpassung an die Körpergröße. Dank des einfachen Faltmechanismus lässt sich der Rollator platzsparend verstauen und transportieren. Mit einer Tragfähigkeit von bis zu 136 kg und einem bequemen Sitz mit Rückenlehne ist der H1040 ein zuverlässiger Begleiter für aktive Menschen, die Wert auf Qualität und Funktionalität legen.​<br/></p>",
             "button_text": "Jetzt kaufen",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://products/helavo-rollator-mit-luftbereifung-fur-draussen-faltbarer-aluminium-outdoor-rollator-mit-sitz-maximale-mobilitat-komfort-im-aussenbereich"
           }
         }
       },
@@ -248,7 +248,7 @@
         "item_zptxbT": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/imgonline-com-ua-resize-v8LvjU9FKNo.jpg",
+            "image": "shopify://shop_images/unsere_community_helavo.jpg",
             "tab_label": "Item",
             "subheading": "Werde ein Teil von Uns",
             "title": "Unsere Community",
