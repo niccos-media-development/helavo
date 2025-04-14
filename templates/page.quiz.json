@@ -11,10 +11,27 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "show_title": true,
+        "page_width": "medium"
+      }
+    },
+    "custom_liquid_kkaf4D": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<div data-tf-live=\"01JRT63R7HD4V6KJX1JMRYAGZ9\"></div><script src=\"//embed.typeform.com/next/embed.js\"></script>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_kkaf4D"
   ]
 }
