@@ -1,1 +1,142 @@
-{"type":"header","name":"Header group","sections":{"custom_announcement_YpqC6w":{"type":"custom-announcement","blocks":{"announcement_HwLJRT":{"type":"announcement","settings":{"icon":"shopify:\/\/shop_images\/icons_3_1.svg","text":"<p>Kostenlose Lieferung ab 70€<\/p>"}},"announcement_NyQhPL":{"type":"announcement","settings":{"icon":"shopify:\/\/shop_images\/stars.svg","text":"<p>Über 300.000 zufriedene Kunden<\/p>"}},"announcement_BVzkzE":{"type":"announcement","settings":{"icon":"shopify:\/\/shop_images\/icons_4_1.svg","text":"<p>Nr.1 Rollatoren in Deutschland<\/p>"}}},"block_order":["announcement_HwLJRT","announcement_NyQhPL","announcement_BVzkzE"],"settings":{"background_color":"#3e3e3e","text_color":"#ffffff","rotation_interval":4,"font_size":13}},"announcement-bar":{"type":"announcement-bar","blocks":{"message-1":{"type":"message","settings":{"text":"Announce something here","learn_more_text":"Learn more","title":"","content":"","button_text":"","button_link":""}}},"block_order":["message-1"],"disabled":true,"settings":{"announcement_bar_position":"non_sticky","announcement_text_size":"normal","autoplay":true,"cycle_speed":5,"background":"#f7aea6","text_color":"#56112a","button_background":"#56112a","button_text_color":"#ffffff"}},"header":{"type":"header","blocks":{"mega_menu_4rAVhP":{"type":"mega_menu","settings":{"menu_item":"Rollatoren","images_position":"right","image_1":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png","image_1_heading":"Allrounder","image_1_text":"","image_1_link":"shopify:\/\/products\/ersatzteil-armlehne-fur-helavo-h1060-h1160-rollatoren-serie","image_2":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png","image_2_heading":"Premium Rollator","image_2_text":"","image_2_link":"","image_3":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png","image_3_heading":"Indoor Rollator","image_3_text":"","image_3_link":"","image_4":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png","image_4_heading":"Heavy Duty Rollator","image_4_text":"","image_4_link":"","image_5":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png","image_5_heading":"Stand-Up Rollator","image_5_text":"","image_5_link":"","image_6":"shopify:\/\/shop_images\/Bildschirmfoto2023-09-29um12.46.37_d1bec4c4-a55e-4285-bcd5-23dc5b84832a.png","image_6_heading":"Rollator","image_6_text":"","image_6_link":""}}},"block_order":["mega_menu_4rAVhP"],"settings":{"enable_sticky_header":true,"logo":"shopify:\/\/shop_images\/Helavo-Logo_Color_1.png","logo_max_width":155,"mobile_logo_max_width":125,"navigation_menu":"main","sidebar_navigation_menu":"","header_layout":"logo_left_navigation_center","show_icons":true,"reduce_desktop_padding":true,"show_locale_selector":true,"show_country_selector":false,"enable_transparent_header":false,"transparent_header_text_color":"#ffffff","search_menu":""}}},"order":["custom_announcement_YpqC6w","announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "custom_announcement_YpqC6w": {
+      "type": "custom-announcement",
+      "blocks": {
+        "announcement_HwLJRT": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shopify://shop_images/icons_3_1.svg",
+            "text": "<p>Kostenlose Lieferung ab 70€</p>"
+          }
+        },
+        "announcement_NyQhPL": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shopify://shop_images/stars.svg",
+            "text": "<p>Über 300.000 zufriedene Kunden</p>"
+          }
+        },
+        "announcement_BVzkzE": {
+          "type": "announcement",
+          "settings": {
+            "icon": "shopify://shop_images/icons_4_1.svg",
+            "text": "<p>Nr.1 Rollatoren in Deutschland</p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_HwLJRT",
+        "announcement_NyQhPL",
+        "announcement_BVzkzE"
+      ],
+      "settings": {
+        "background_color": "#3e3e3e",
+        "text_color": "#ffffff",
+        "rotation_interval": 4,
+        "font_size": 13
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message-1": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "learn_more_text": "Learn more",
+            "title": "",
+            "content": "",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "message-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "announcement_bar_position": "non_sticky",
+        "announcement_text_size": "normal",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#f7aea6",
+        "text_color": "#56112a",
+        "button_background": "#56112a",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_4rAVhP": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Rollatoren",
+            "images_position": "right",
+            "image_1": "shopify://shop_images/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png",
+            "image_1_heading": "Allrounder",
+            "image_1_text": "",
+            "image_1_link": "shopify://collections/allrounder",
+            "image_2": "shopify://shop_images/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png",
+            "image_2_heading": "Indoor Rollator",
+            "image_2_text": "",
+            "image_2_link": "shopify://collections/indoor",
+            "image_3": "shopify://shop_images/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png",
+            "image_3_heading": "Outdoor Rollator",
+            "image_3_text": "",
+            "image_3_link": "shopify://collections/outdoor-rollator",
+            "image_4": "shopify://shop_images/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png",
+            "image_4_heading": "Heavy Duty Rollator",
+            "image_4_text": "",
+            "image_4_link": "shopify://collections/heavy-duty-rollator",
+            "image_5": "shopify://shop_images/Bildschirmfoto2023-09-29um11.13.45_f97be30e-a8da-44a8-b212-2d8b99b89d4c.png",
+            "image_5_heading": "Stand-Up Rollator",
+            "image_5_text": "",
+            "image_5_link": "shopify://collections/stand-up-rollator",
+            "image_6": "shopify://shop_images/Bildschirmfoto2023-09-29um12.46.37_d1bec4c4-a55e-4285-bcd5-23dc5b84832a.png",
+            "image_6_heading": "Hybrid Rollator",
+            "image_6_text": "",
+            "image_6_link": "shopify://collections/hibrid-rollator"
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_4rAVhP"
+      ],
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "shopify://shop_images/Helavo-Logo_Color_1.png",
+        "logo_max_width": 155,
+        "mobile_logo_max_width": 125,
+        "navigation_menu": "main",
+        "sidebar_navigation_menu": "",
+        "header_layout": "logo_left_navigation_center",
+        "show_icons": true,
+        "reduce_desktop_padding": true,
+        "show_locale_selector": true,
+        "show_country_selector": false,
+        "enable_transparent_header": false,
+        "transparent_header_text_color": "#ffffff",
+        "search_menu": ""
+      }
+    }
+  },
+  "order": [
+    "custom_announcement_YpqC6w",
+    "announcement-bar",
+    "header"
+  ]
+}
