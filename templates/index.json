@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/Carbon_rollator.png",
             "mobile_image": "shopify://shop_images/mobile_rollator.jpg",
-            "text_position": "bottom_left",
+            "text_position": "top_center",
             "subheading": "Bleiben Sie aktiv und unabhängig – mit hochwertigen Gehhilfen für jeden Tag",
             "title": "Mobilität neu erleben",
             "button_1_text": "Jetzt entdecken",
