@@ -312,6 +312,19 @@
         "include_horizontal_margins": true,
         "include_vertical_margins": true
       }
+    },
+    "custom_liquid_RnhiXt": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "Finde den passenden Rollator",
+        "liquid": "<div data-tf-live=\"01JRT63R7HD4V6KJX1JMRYAGZ9\"></div><script src=\"//embed.typeform.com/next/embed.js\"></script>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
@@ -321,6 +334,7 @@
     "image_with_text_ePHjxK",
     "image_with_text_yKAkAQ",
     "image_with_text_KCGBQe",
-    "17427980752a6ecb9a"
+    "17427980752a6ecb9a",
+    "custom_liquid_RnhiXt"
   ]
 }
