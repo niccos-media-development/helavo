@@ -1,0 +1,132 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "rich_text_qtU7ac": {
+      "type": "rich-text",
+      "settings": {
+        "subheading": "",
+        "title": "Du benötigst Support?",
+        "content": "<p>Wir sind jederzeit für dich per Telefon, Chat oder E-Mail da! Klicke auf den unteren Button und wähle deinen Support aus.</p>",
+        "button_text": "Kontakt",
+        "button_link": "shopify://pages/kontakt",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#f5f5f5",
+        "text_color": "#3e3e3e",
+        "button_background": "#3e3e3e",
+        "button_text_color": "#f5f5f5"
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon_width": 50,
+            "title": "Kostenloser Versand",
+            "content": "<p>Kostenloser weltweiter Versand und Rückversand - inklusive Zoll und Steuern</p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon_width": 50,
+            "title": "Kundenservice",
+            "content": "<p>Wir sind von Montag bis Freitag für Sie da, um Ihre Fragen zu beantworten.</p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Sichere Bezahlung",
+            "content": "<p>Ihre Zahlungsinformationen werden sicher verarbeitet.</p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon_width": 50,
+            "title": "Kontakt",
+            "content": "<p>Möchten Sie mit uns Kontakt aufnehmen? Schicken Sie uns einfach eine E-Mail an info@helavo.de</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "links_VNQpDm": {
+          "type": "links",
+          "settings": {
+            "menu": "footer"
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "bestellhilfe"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "title": "In Kontakt bleiben",
+            "content": "<p>Erfahre als Erste:r von Neuheiten, Aktionen und exklusiven Angeboten.</p>"
+          }
+        },
+        "social_media": {
+          "type": "social_media",
+          "settings": {
+            "title": "Follow us",
+            "content": "<p>Begleite unsere Reise und werde Teil unserer Community.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "links_VNQpDm",
+        "links",
+        "newsletter",
+        "social_media"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "enable_follow_on_shop": true,
+        "show_country_selector": true,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "rich_text_qtU7ac",
+    "text-with-icons",
+    "footer"
+  ]
+}

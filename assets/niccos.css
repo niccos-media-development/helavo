@@ -1,0 +1,232 @@
+/* Start Product benefits */
+.product-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  --flex-gap: 1rem;
+  gap: var(--flex-gap);
+}
+
+.product-benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: calc(50% - (var(--flex-gap) / 2));
+  border-radius: 10px;
+  border: 1px solid #eee;
+  padding: 0.75rem;
+}
+
+@media (max-width: 769px) {
+  .product-benefit {
+    flex-basis: 100%;
+  }
+}
+
+.product-benefit__icon {
+  padding-right: 0.4rem;
+}
+
+.product-benefit img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+/* End Product Benefits */
+
+.mega-menu__image-push {
+  width: 150px !important;
+}
+
+@media screen and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  product-item.niccos .product-item__quick-form {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+  }
+}
+
+@media (max-width: 769px) {
+  .mobile-nav__images-scroller {
+    display: block !important;
+  }
+  .mobile-nav__image-push {
+    text-align: left;
+    min-width: unset;
+    max-width: unset;
+  }
+  .mobile-nav__image-push img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  product-media[product-handle] {
+    position: sticky;
+    top: calc(var(--header-height) + 40px);
+  }
+}
+
+/* Benefits list metafield */
+.niccos-mfield-points__container {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.niccos-mfield-points__container.checkmark .niccos-mfield-points__field:before {
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background: var(--mfield-point-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 0;
+  content: '';
+  display: block;
+  height: 24px;
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  width: 24px;
+}
+
+.niccos-mfield-points__container .niccos-mfield-points__field {
+  padding-left: 34px;
+  position: relative;
+}
+/* End Benefits list metafield */
+
+.button {
+  border-radius:15px; !important;
+}
+
+.locale-selectors__container {
+  display:none !important;
+}
+
+.wrapper {
+  border-radius: 10px;
+  background: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-headline {
+  color: #000;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.social-subheadline {
+  color: #000;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.chat-button {
+  display: inline-flex;
+  height: 31px;
+  padding: 5px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background: black;
+  color: #fff;
+  line-height: normal;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.image-with-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item__quick-form {
+  margin-bottom:10px;
+}
+
+.store-benefits .store-benefit-item {
+  padding: 15px 10px;
+  background: white;
+  justify-content: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 8px;
+}
+
+.store-benefits .store-benefit-item .store-benefit-icon {
+  height: 30px;
+}
+
+.store-benefits .store-benefit-item .store-benefit-texte {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+@media (max-width: 999px) {
+  .store-benefits .store-benefit-item .store-benefit-texte {
+    font-size: 12px !important;
+  }
+}
+
+.store-benefits {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+.store-benefits .store-benefit-item {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 48%
+}
+
+.store-benefits .store-benefit-item .store-benefit-icon img, .store-benefits .store-benefit-item .store-benefit-icon svg {
+    height: auto;
+    width: 30px
+}
+
+.store-benefits .store-benefit-item .store-benefit-texte {
+    color: #505151;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    margin-left: 10px;
+    max-height: 32px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.pdp-sotre-benefits .first-store-benefit .store-benefit-texte {
+    max-width: 80px !important
+}
+
+.pdp-sotre-benefits .second-store-benefit .store-benefit-texte {
+    max-width: 118px !important
+}
+
+.cart-drawer-sotre-benefits {
+    margin-bottom: 10px;
+    padding: 0 15px 15px
+}
+
