@@ -1,0 +1,255 @@
+{% comment %}
+  Section: Product Comparison Grid with first item as current product
+{% endcomment %}
+{% assign comparisons = product.metafields.custom.product_comparison.value %}
+{% assign all_products = product.metafields.custom.product_comparison.product %}
+{%- assign quick_buy_icon_name = 'quick-buy-' | append: settings.cart_icon | replace: '_', '-' -%}
+{% if comparisons %}
+<section class="cust-comparison-section">
+<div class="container">
+  {% if section.settings.section_title != blank %}
+    <h2 class="cust-comparison-title">{{ section.settings.section_title }}</h2>
+  {% endif %}
+  <div class="custom_table">
+  <table class="cust-comparison-table">
+    <thead>
+      <tr>
+        <th></th>
+          <th>
+            <a href="{{ product.url }}" style="text-decoration: none; color: inherit;">
+              {% if product.featured_image %}
+                <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+              {% endif %}
+              <div class="cust_product_title">{{ product.title }}</div>
+            </a>
+            {%- if request.page_type != 'password' and settings.product_add_to_cart and product.available -%}
+                {%- if product.variants.size == 1 -%}
+                  {%- capture form_id -%}product_form_{{ section.id }}_{{ product.id }}_{% increment product_form_index %}{%- endcapture -%}
+                  {%- form 'product', product, is: 'product-form', id: form_id, class: 'product-item__quick-form' -%}
+                    <input type="hidden" name="quantity" value="1">
+                    <input type="hidden" name="id" value="{{ product.first_available_variant.id }}">
+                    <button is="loader-button" type="submit" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch">{{ 'collection.product.add_to_cart_short' | t }}</button>
+                    <button type="submit" class="product-item__quick-buy-button hidden-no-touch">
+                      <span class="visually-hidden">{{ 'collection.product.add_to_cart_short' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+                  {%- endform -%}
+                {%- else -%}
+                  {%- comment -%}
+                  IMPLEMENTATION NOTE: Depending on the device we show a different icon or open a different mode (either popover or drawer)
+                  {%- endcomment -%}
+            
+                  <div class="product-item__quick-form">
+                    <button is="toggle-button" loader aria-controls="product-{{ section.id }}-{{ block.id }}-{{ product.id }}-drawer" aria-expanded="false" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch hidden-phone">{{ 'collection.product.quick_view' | t }}</button>
+                    <button is="toggle-button" aria-controls="product-{{ section.id }}-{{ block.id }}-{{ product.id }}-drawer" aria-expanded="false" class="product-item__quick-buy-button hidden-no-touch hidden-phone">
+                      <span class="visually-hidden">{{ 'collection.product.quick_view' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+            
+                    <button is="toggle-button" aria-controls="product-{{ section.id }}-{{ block.id }}-{{ product.id }}-popover" aria-expanded="false" class="product-item__quick-buy-button hidden-tablet-and-up">
+                      <span class="visually-hidden">{{ 'collection.product.quick_view' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+                  </div>
+            
+                  <quick-buy-popover id="product-{{ section.id }}-{{ block.id }}-{{ product.id }}-popover" href="{{ product.url }}" class="popover popover--quick-buy hidden-tablet-and-up"></quick-buy-popover>
+                  <quick-buy-drawer id="product-{{ section.id }}-{{ block.id }}-{{ product.id }}-drawer" href="{{ product.url }}" class="drawer drawer--large drawer--quick-buy hidden-phone"></quick-buy-drawer>
+                {%- endif -%}
+              {%- endif -%}
+          </th>
+       
+        {% for comparison in comparisons %}
+            {% assign p = comparison.product.value %}
+
+          <th>
+            <a href="{{ p.url }}" style="text-decoration: none; color: inherit;">
+              {% if p.featured_image %}
+                <img src="{{ p.featured_image | img_url: 'master' }}" alt="{{ p.title }}">
+              {% endif %}
+              <div class="cust_product_title">{{ p.title }}</div>
+            </a>
+            {%- if request.page_type != 'password' and settings.product_add_to_cart and p.available -%}
+                {%- if p.variants.size == 1 -%}
+                  {%- capture form_id -%}product_form_{{ section.id }}_{{ p.id }}_{% increment product_form_index %}{%- endcapture -%}
+                  {%- form 'product', product, is: 'product-form', id: form_id, class: 'product-item__quick-form' -%}
+                    <input type="hidden" name="quantity" value="1">
+                    <input type="hidden" name="id" value="{{ p.first_available_variant.id }}">
+                    <button is="loader-button" type="submit" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch">{{ 'collection.product.add_to_cart_short' | t }}</button>
+                    <button type="submit" class="product-item__quick-buy-button hidden-no-touch">
+                      <span class="visually-hidden">{{ 'collection.product.add_to_cart_short' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+                  {%- endform -%}
+                {%- else -%}
+                  {%- comment -%}
+                  IMPLEMENTATION NOTE: Depending on the device we show a different icon or open a different mode (either popover or drawer)
+                  {%- endcomment -%}
+            
+                  <div class="product-item__quick-form">
+                    <button is="toggle-button" loader aria-controls="product-{{ section.id }}-{{ block.id }}-{{ p.id }}-drawer" aria-expanded="false" class="button button--outline button--text button--full {% if section.settings.desktop_products_per_row >= 5 %}button--small{% endif %} hidden-touch hidden-phone">{{ 'collection.product.quick_view' | t }}</button>
+                    <button is="toggle-button" aria-controls="product-{{ section.id }}-{{ block.id }}-{{ p.id }}-drawer" aria-expanded="false" class="product-item__quick-buy-button hidden-no-touch hidden-phone">
+                      <span class="visually-hidden">{{ 'collection.product.quick_view' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+            
+                    <button is="toggle-button" aria-controls="product-{{ section.id }}-{{ block.id }}-{{ p.id }}-popover" aria-expanded="false" class="product-item__quick-buy-button hidden-tablet-and-up">
+                      <span class="visually-hidden">{{ 'collection.product.quick_view' | t }}</span>
+                      {%- render 'icon' with quick_buy_icon_name -%}
+                    </button>
+                  </div>
+            
+                  <quick-buy-popover id="product-{{ section.id }}-{{ block.id }}-{{ p.id }}-popover" href="{{ p.url }}" class="popover popover--quick-buy hidden-tablet-and-up"></quick-buy-popover>
+                  <quick-buy-drawer id="product-{{ section.id }}-{{ block.id }}-{{ p.id }}-drawer" href="{{ p.url }}" class="drawer drawer--large drawer--quick-buy hidden-phone"></quick-buy-drawer>
+                {%- endif -%}
+              {%- endif -%}
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% assign specs = 
+        "Price : price
+        Speziell geeignet für:custom.specially_suitable_for,
+        Griffhöhe:custom.handle_height,
+        Breite:custom.width,
+        Tiefe:custom.depth,
+        Gewicht:custom.weight,
+        Max. Belastbarkeit:custom.max_load,
+        Faltbar:custom.foldable,
+        Maße zusammengeklappt (L*B*H):custom.folded_dimensions,
+        Radgröße:custom.wheel_size,
+        Sitzhöhe:custom.seat_height,
+        Sitzfläche (L*B):custom.seat_area,
+        Verfügbare Farben:custom.available_colors" | split: "," 
+      %}
+
+      {% for spec in specs %}
+        {% assign parts = spec | split: ":" %}
+        {% assign label = parts[0] | strip %}
+        {% assign key = parts[1] | strip | split: "." %}
+        {% assign namespace = key[0] %}
+        {% assign metafield_key = key[1] %}
+
+        <tr>
+          <td class="lable_custom"><strong>{{ label }}</strong></td>
+          
+          {% if label == 'Price' %}
+            <td><b>{{ product.price | money }}</b></td>
+          {% else %}
+            {% assign value = product.metafields[namespace][metafield_key] %}
+            <td>{{ value.value | default: "-" }}</td>
+          {% endif %}
+         
+          {% for comparison in comparisons %}
+            {% assign p = comparison.product.value %}
+            {% if label == 'Price' %}
+                <td><b>{{ p.price | money }}</b></td>
+            {% else %}
+                {% assign value = p.metafields[namespace][metafield_key] %}
+                <td>{{ value.value | default: "-" }}</td>
+            {% endif %}
+            
+            
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  </div>
+</section>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Product Comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Produktvergleich"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Comparison Table"
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+.cust-comparison-scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+table.cust-comparison-table img {
+    aspect-ratio: 1 / 1;
+    display: block; margin: 0 auto;
+}
+.cust_product_title{
+    line-height: 1.2;
+    padding-top: 15px;
+}
+.cust-comparison-table {
+  border-collapse: collapse;
+  min-width: 800px; /* Ensures table is wider than viewport to enable scroll */
+}
+
+.cust-comparison-table th,
+.cust-comparison-table td {
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+  background: white;
+  min-width: 230px; /* optional: ensures consistent column width */
+  width: 230px;
+}
+
+/* Sticky first column: label column */
+.cust-comparison-table td:first-child,
+.cust-comparison-table th:first-child {
+    position: sticky;
+    left: 0;
+    background: #fff;
+    min-width: 300px;
+    border-color: #fff;
+}
+
+/* Sticky default product (second column) */
+.cust-comparison-table td:nth-child(2),
+.cust-comparison-table th:nth-child(2) {
+    position: sticky;
+    left: 300px;
+    background: #fff;
+    border-color: #fff;
+}
+
+/* Header row no borders */
+.cust-comparison-table thead tr th {
+  border: none;
+  background-color: transparent;
+}
+
+/* Only bottom border in tbody */
+.cust-comparison-table tbody tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.cust-comparison-table tbody td {
+  border: none;
+}
+
+.cust-comparison-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.custom_table{
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+}
+{% endstylesheet %}
+
